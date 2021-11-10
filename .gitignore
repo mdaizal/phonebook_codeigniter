@@ -5,5 +5,3 @@ application/cache/*
 
 application/logs/*
 !application/logs/index.html
-
-!application/*/.htaccess
