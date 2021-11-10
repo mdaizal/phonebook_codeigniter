@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  myapp:
+    image: bitnami/codeigniter
+    ports: 
+      - "8080:8000"
+    volumes: 
+      - ".:/app"
+    depends_on:
+      - mariadb
+  mariadb:
+    image: bitnami/mariadb
+    ports:
+      - "1235:3306"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes

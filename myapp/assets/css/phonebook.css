@@ -1,0 +1,140 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* DivTable.com */
+.divTable{
+	display: table;
+	width: 100%;
+	counter-reset: section;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	left: 500px;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead, .divTableCellBil {
+	border-bottom: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+
+.divTableCellBil:before {
+	counter-increment: section;
+	content: counter(section);
+}
+
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+/* <!-- DivTable.com --> */
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#63b8ee;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color:#468ccf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButtonDelete {
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButtonDelete:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+.myButtonDelete:active {
+	position:relative;
+	top:1px;
+}
+
+.myButtonEdit {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButtonEdit:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButtonEdit:active {
+	position:relative;
+	top:1px;
+}
+/* https://www.bestcssbuttongenerator.com/ */
+
+h1 {
+		font-family: Arial, Helvetica, sans-serif;
+		position: relative;
+		left: 500px;
+}
+
+.divCreateContact {
+	width: 700px;
+	position: relative;
+	left: 500px;
+}
+
+.inputBox {
+	width: 600px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: medium;
+	margin-top: 10px;
+}
