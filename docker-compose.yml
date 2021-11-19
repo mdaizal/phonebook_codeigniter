@@ -11,18 +11,18 @@ services:
       - mariadb
   mariadb:
     image: bitnami/mariadb
-    restart: always
     ports:
       - "1235:3306"
     environment:
-      - ALLOW_EMPTY_PASSWORD=yes
+      #- ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_ROOT_PASSWORD=example
     volumes:
       - mariadb-data:/var/lib/mysql
   adminer:
     image: adminer
-    restart: always
     ports:
       - "8080:8080"
+    restart: always
 
 volumes:
   mariadb-data:
